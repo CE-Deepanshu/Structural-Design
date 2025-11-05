@@ -16,4 +16,4 @@ A web-based platform for uploading and managing structural design assignments/ R
 
 2. Overall depth/ Thickness of slab at free end = 100mm
 
-3. Grade of Concrete = M40, Characteristic Compressive Strength, fck = $40N/mm^2$
+3. Grade of Concrete = M40, Characteristic Compressive Strength, fck = 40N/mm^2

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantilever Slab Design - Case 2 (IS 456:2000)</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: white;
+            line-height: 1.6;
+            margin: 20px;
+            color: #000;
+        }
+        
+        .section-box {
+            border: 2px solid #0066cc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3 {
+            color: #003366;
+        }
+        
+        .formula {
+            background-color: #e6f2ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #0066cc;
+            font-family: "Times New Roman", serif;
+        }
+        
+        .calculation {
+            background-color: #f0f8ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            border: 1px solid #0066cc;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #e6f2ff;
+        }
+        
+        .sqrt-container {
+            display: inline-flex;
+            align-items: center;
+            vertical-align: middle;
+        }
+        
+        .sqrt-symbol {
+            font-size: 18px;
+            margin-right: 2px;
+        }
+        
+        .sqrt {
+            border-top: 1px solid black;
+            padding: 1px 5px 0 5px;
+            display: inline-block;
+        }
+        
+        .frac {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .frac > span {
+            display: block;
+            padding: 0.1em;
+        }
+        
+        .frac span.bottom {
+            border-top: 1px solid;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .result {
+            font-weight: bold;
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center">DESIGN OF CANTILEVER SLAB - CASE 2</h1>
+    
+    <div class="section-box">
+        <h2>Answer 2</h2>
+        
+        <div class="section-box">
+            <h3>Assumptions</h3>
+            <table>
+                <tr>
+                    <th>Parameter</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Overall depth at fixed end</td>
+                    <td>D = 200 mm</td>
+                </tr>
+                <tr>
+                    <td>Overall depth at free end</td>
+                    <td>D = 100 mm</td>
+                </tr>
+                <tr>
+                    <td>Grade of Concrete</td>
+                    <td>M40, f<sub>ck</sub> = 40 N/mm²</td>
+                </tr>
+                <tr>
+                    <td>Grade of Steel</td>
+                    <td>Fe500, f<sub>y</sub> = 500 N/mm²</td>
+                </tr>
+                <tr>
+                    <td>Clear cover</td>
+                    <td>d' = 20 mm (mild exposure)</td>
+                </tr>
+                <tr>
+                    <td>Diameter of main steel</td>
+                    <td>φ<sub>main</sub> = 12 mm</td>
+                </tr>
+                <tr>
+                    <td>Diameter of distribution steel</td>
+                    <td>φ<sub>distribution</sub> = 10 mm</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section-box">
+            <h3>Step 1: Calculate Effective Depth</h3>
+            <div class="formula">
+                d = D - φ/2 - d' = 200 - 12/2 - 20 = 174 mm
+            </div>
+        </div>
+        
+        <div class="section-box">
+            <h3>Step 2: Calculate Effective Span (Clause 22.2(c))</h3>
+            <div class="formula">
+                l<sub>eff</sub> = Clear span + d/2 = 1.5 + 0.174/2 = 1.587 m
+            </div>
+        </div>
+        
+        <div class="section-box">
+            <h3>Step 3: Calculation of Design Load</h3>
+            <p>Self weight of the slab = (0.2 + 0.1)/2 × 25 = 3.75 kN/m²</p>
+            <div class="calculation">
+                Factored dead load, W<sub>UDL</sub> = 1.5 × 3.75 = 5.625 kN/m²<br>
+                Factored live load (UVL):<br>
+                At free end: 1.5 × 83.5 = 125.25 kN/m²<br>
+                At fixed end: 1.5 × 31 = 46.5 kN/m²
+            </div>
+        </div>
+        
+        <div class="section-box">
+            <h3>Step 4: Calculation of Moment and Shear Force</h3>
+            <h4>Bending Moment, M<sub>u</sub>:</h4>
+            <div class="formula">
+                M<sub>u</sub> = W<sub>UDL</sub> × l²/2 + (W<sub>uLL2</sub> × l²/2) + (1/2 × l × W<sub>uLL</sub> × 2/3 × l)
+            </div>
+            <div class="calculation">
+                M<sub>u</sub> = 5.625 × (1.587)²/2 + (46.5 × 1.587²/2) + (1/2 × 1.587 × 78.75 × 2/3 × 1.587)<br>
+                M<sub>u</sub> = 131.75 ≈ 132 kNm
+            </div>
+            
+            <h4>Shear Force, V<sub>u</sub>:</h4>
+            <div class="formula">
+                V<sub>u</sub> = (W<sub>uDL</sub> × l) + ((W<sub>uLL1</sub> + W<sub>uLL2</sub>)/2) × l
+            </div>
+            <div class="calculation">
+                V<sub>u</sub> = (5.625 × 1.587) + ((125.25 + 46.5)/2) × 1.587 = 108.31 kN
+            </div>
+        </div>
+        
+        <div class="section-box">
+            <h3>Step 5: Check for Depth</h3>
+            <div class="formula">
+                M<sub>u</sub> = M<sub>u,lim</sub> = 0.133 f<sub>ck</sub>bd² (Clause G-1.1(c) for Fe500)
+            </div>
+            <div class="calculation">
+                132 × 10⁶ = 0.133 × 40 × 1000 × d²<br>
+                d<sub>required</sub> = <div class="sqrt-container">
+                    <span class="sqrt-symbol">√</span>
+                    <span class="sqrt">
+                        <div class="frac"><span>132 × 10⁶</span><span class="bottom">0.133 × 40 × 1000</span></div>
+                    </span>
+                </div> = 157.518 mm<br>
+                d<sub>provided</sub> = 174 mm<br>
+                <span class="result">d<sub>required</sub> < d<sub>provided</sub>, Hence O.K</span>
+            </div>
+        </div>
+        
+        <div class="section-box">
+            <h3>Step 6: Calculation of Steel</h3>
+            
+            <h4>Main Bars:</h4>
+            <div class="formula">
+                A<sub>st required</sub> = 
+                <div class="frac"><span>0.5 × f<sub>ck</sub></span><span class="bottom">f<sub>y</sub></span></div> × 
+                <div class="sqrt-container">
+                    <span class="sqrt-symbol">√</span>
+                    <span class="sqrt">
+                        1 - 
+                        <div class="frac"><span>4.6 × M<sub>u</sub></span><span class="bottom">f<sub>ck</sub> × b × d²</span></div>
+                    </span>
+                </div>
+                × b × d
+            </div>
+            <div class="calculation">
+                A<sub>st required</sub> = 
+                <div class="frac"><span>0.5 × 40</span><span class="bottom">500</span></div> × 
+                <div class="sqrt-container">
+                    <span class="sqrt-symbol">√</span>
+                    <span class="sqrt">
+                        1 - 
+                        <div class="frac"><span>4.6 × 132 × 10⁶</span><span class="bottom">40 × 1000 × 174²</span></div>
+                    </span>
+                </div>
+                × 1000 × 174<br>
+                A<sub>st required</sub> = 2045.368 mm²<br><br>
+                
+                Spacing = (Area of one 12mm bar / A<sub>st required</sub>) × 1000 = (113.09 / 2045.368) × 1000 = 55.29 ≈ 55 mm<br>
+                <span class="result">Provide 12mm φ @ 55mm c/c</span>
+            </div>
+            
+            <h4>Distribution Bars (Clause 26.5.2.1):</h4>
+            <div class="formula">
+                A<sub>st distribution</sub> = <div class="frac"><span>0.12</span><span class="bottom">100</span></div> × b × d
+            </div>
+            <div class="calculation">
+                A<sub>st distribution</sub> = <div class="frac"><span>0.12</span><span class="bottom">100</span></div> × 1000 × 174 = 208.8 mm²<br><br>
+                
+                Spacing = (1000 × Area of one 8mm bar) / A<sub>st distribution</sub> = (1000 × 50.26) / 208.8 = 240.73 ≈ 240 mm<br>
+                <span class="result">Provide 8mm φ @ 240mm c/c</span>
+            </div>
+        </div>
+        
+        <div class="section-box">
+            <h3>Step 7: Development Length (Clause 26.2.1)</h3>
+            <div class="formula">
+                L<sub>d</sub> = <div class="frac"><span>φ × σ<sub>s</sub></span><span class="bottom">4 × τ<sub>bd</sub></span></div> = 
+                <div class="frac"><span>0.87 × f<sub>y</sub> × φ</span><span class="bottom">4 × τ<sub>bd</sub></span></div>
+            </div>
+            <div class="calculation">
+                L<sub>d</sub> = <div class="frac"><span>0.87 × 500 × 12</span><span class="bottom">4 × 1.9 × 1.6</span></div> = 429.276 ≈ 430 mm
+            </div>
+        </div>
+        
+        <div class="section-box">
+            <h3>Step 8: Check for Shear</h3>
+            <div class="formula">
+                τ<sub>v</sub> = <div class="frac"><span>V<sub>u</sub></span><span class="bottom">b × d</span></div>
+            </div>
+            <div class="calculation">
+                τ<sub>v</sub> = <div class="frac"><span>108.31 × 1000</span><span class="bottom">1000 × 174</span></div> = 0.62 N/mm²
+            </div>
+            
+            <div class="formula">
+                P<sub>t</sub> = <div class="frac"><span>100 × A<sub>st</sub></span><span class="bottom">b × d</span></div>
+            </div>
+            <div class="calculation">
+                P<sub>t</sub> = <div class="frac"><span>100 × 2045.368</span><span class="bottom">1000 × 174</span></div> = 1.17%
+            </div>
+            
+            <p>For P<sub>t</sub> = 1.17% and M40 Concrete:</p>
+            <div class="calculation">
+                τ<sub>c</sub> = τ<sub>c</sub> × k = 0.720 × 1.2 = 0.864 N/mm²<br>
+                <span class="result">Since τ<sub>v</sub> (0.62) < τ<sub>c</sub> (0.864), Hence O.K</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

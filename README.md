@@ -28,4 +28,4 @@ A web-based platform for uploading and managing structural design assignments/ R
 
 ## <span style="color:green; font-weight:Bold ; font-size:0.7em;">📝 REVISION QUESTION BANK: [Click here to open](RevQues_DSS.md)</span>
 
-## <span style="color:orange; font-weight:Bold ; font-size:0.7em;">📇 Indian Standard steel table: [Click here to open](ISST.html)</span>
+## <span style="color:orange; font-weight:Bold ; font-size:0.7em;">📇 Indian Standard Steel Section Table: [Click here to open](ISST.html)</span>

@@ -1,6 +1,6 @@
 # DESIGN OF CONCRETE STRUCTURES - IMPORTANT QUESTIONS
 
-## 📚 1. DESIGN PHILOSOPHIES & BASIC CONCEPTS
+## <span style="color:blue; font-weight:Bold ; font-size:0.7em;">📚 1. DESIGN PHILOSOPHIES & BASIC CONCEPTS</span>
 
 ### Q1. (4 Marks)
 **Compare and contrast the Limit State Method and Working Stress Method of design. Explain why the Limit State Method is considered more preferable than the Working Stress Method in modern structural design practice.**
@@ -19,7 +19,7 @@
 
 ---
 
-## 🏗️ 2. BEAMS & SLABS
+## <span style="color:blue; font-weight:Bold ; font-size:0.7em;">🏗️ 2. BEAMS & SLABS</span>
 
 ### Q6. (12 Marks)
 **Design a continuous reinforced concrete beam of rectangular section 300mm × 600mm to support a dead load of 15 kN/m and live load of 20 kN/m over 3 spans of 6m each. The beam is simply supported at ends. Use M20 concrete and Fe415 steel. Sketch the reinforcement details along the longitudinal section.**
@@ -44,7 +44,7 @@
 
 ---
 
-## 🏢 3. COLUMNS
+## <span style="color:blue; font-weight:Bold ; font-size:0.7em;">🏢 3. COLUMNS</span>
 
 ### Q13. (8 Marks)
 **Design a short column of size 450mm × 450mm subjected to biaxial bending with the following particulars: Factored Load P = 1500 kN, Factored Moment Mux = 90 kNm, Factored Moment Muy = 85 kNm. Use M20 concrete and Fe415 steel.**
@@ -63,7 +63,7 @@
 
 ---
 
-## 🏠 4. FOUNDATIONS
+## <span style="color:blue; font-weight:Bold ; font-size:0.7em;">🏠 4. FOUNDATIONS</span>
 
 ### Q18. (12 Marks)
 **Design a trapezoidal footing for two columns spaced 5 meters apart, with loads of 1600 kN and 2600 kN respectively. The dimensions of the columns are 600mm × 600mm and 750mm × 750mm respectively. The projections beyond the centres of the columns parallel to the length of the footing should be limited to 0.85m and 1.25m. Assume safe bearing capacity of soil as 300 kN/m². Use M20 concrete and Fe500 steel.**
@@ -82,7 +82,7 @@
 
 ---
 
-## 🧱 5. RETAINING STRUCTURES
+## <span style="color:blue; font-weight:Bold ; font-size:0.7em;">🧱 5. RETAINING STRUCTURES</span>
 
 ### Q23. (12 Marks)
 **Design a cantilever retaining wall to retain an earth embankment 4m high above ground level. The density of earth is 18 kN/m³ and its angle of repose is 30°. The embankment is horizontal at its top. The safe bearing capacity of soil is 200 kN/m² and the coefficient of friction between soil and concrete is 0.5. Use M20 concrete and Fe415 steel. Draw the detailing diagram.**
@@ -98,7 +98,7 @@
 
 ---
 
-## 💧 6. WATER TANKS & LIQUID RETAINING STRUCTURES
+## <span style="color:blue; font-weight:Bold ; font-size:0.7em;">💧 6. WATER TANKS & LIQUID RETAINING STRUCTURES</span>
 
 ### Q27. (12 Marks)
 **Design a water tank resting on ground with flexible base for a capacity of 4,50,000 litres. Overall height of tank is restricted to 5m with a free board of 300mm. Use M25 grade concrete and Fe500 steel. Design the vertical wall and base slab.**
